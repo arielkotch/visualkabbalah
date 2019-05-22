@@ -1,0 +1,46 @@
+{
+  "name": "visualkabbalahcli",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/runtime": "^7.4.4",
+    "apollo-boost": "^0.3.1",
+    "babel-loader": "^8.0.5",
+    "bootstrap": "^4.3.1",
+    "faker": "^4.1.0",
+    "get-google-fonts": "^1.1.3",
+    "graphql": "^14.3.0",
+    "graphql-tag": "^2.10.1",
+    "i18n": "^0.8.3",
+    "node-fetch": "^2.5.0",
+    "random-questions": "^1.0.1",
+    "react": "^16.8.6",
+    "react-apollo": "^2.5.5",
+    "react-bootstrap": "^1.0.0-beta.8",
+    "react-dom": "^16.8.6",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "styled-components": "^4.2.0",
+    "styled-theming": "^2.2.0"
+  },
+  "scripts": {
+    "start": "NODE_PATH=src/ PORT=4000  react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "node": "^8.15.0"
+  }
+}

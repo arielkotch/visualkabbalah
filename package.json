@@ -1,25 +1,29 @@
 {
-  "name": "afterclass-react",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
-  },
+  "name": "visualkabbalah",
+  "version": "1.0.0",
+  "description": "questions for your answers",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "database": "json-server --watch db.json",
+    "start": "node server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"react-native-clean-project\" \"npm start\" \"npm run client\" \"npm run database\""
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "keywords": [
+    "study",
+    "school"
+  ],
+  "author": "Ariel Kotch",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.0",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.3.0"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
 }
