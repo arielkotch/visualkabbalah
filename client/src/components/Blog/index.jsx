@@ -7,6 +7,8 @@ import {
     Row,
     CardDeck
 } from 'react-bootstrap';
+import {truncate} from 'lodash';
+
 import {Card} from 'components/Blog/styles.jsx';
 import shared from 'i18n/shared';
 import {Padding} from 'components/Styled/Headers/index.jsx';
@@ -29,26 +31,20 @@ export const Blog = ({posts}) => {
         <Container>
             {posts.map(({body, title, image}) => (
                 <React.Fragment>
-
                     <Card>
                         <Card.Header as="h5">Featured</Card.Header>
                         <Card.Body>
                             <Row>
                                 <Col md={3}>
-                                    <Image fluid src={(shared.image)}/>
+                                    <Image fluid src={(image)}/>
                                 </Col>
                                 <Col>
-                                    <Card.Title>Special title treatment</Card.Title>
+                                    <Card.Title>{title}</Card.Title>
                                     <Card.Text>
-                                        With supporting text below as a natural lead-in to additional content.
-                                        With supporting text below as a natural lead-in to additional content.
-                                        With supporting text below as a natural lead-in to additional content.
-                                        With supporting text below as a natural lead-in to additional content.
-                                        With supporting text below as a natural lead-in to additional content.
-                                        With supporting text below as a natural lead-in to additional content.
-                                        With supporting text below as a natural lead-in to additional content.
-                                        With supporting text below as a natural lead-in to additional content.
-                                        
+                                        {truncate(body, {
+                                        'length': 500,
+                                        'separator': ' '
+                                        })}    
                                     </Card.Text>
                                 </Col>
                             </Row>
