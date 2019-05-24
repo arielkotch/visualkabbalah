@@ -1,34 +1,18 @@
-
-import {
-    Container,
-    Nav,
-    Col,
-    Image,
-    Row,
-    CardDeck
-} from 'react-bootstrap';
+import {Container, Nav, Col, Image, Row} from 'react-bootstrap';
 import {truncate} from 'lodash';
-
 import {Card} from 'components/Blog/styles.jsx';
-import shared from 'i18n/shared';
 import {Padding} from 'components/Styled/Headers/index.jsx';
 import React from 'react';
-import {Layout} from 'components/Layout/index.jsx';
-import {CustomBadge} from 'components/Badge/index.jsx'
-import {Badge} from 'react-bootstrap'
-const renderViewCounter=()=>(
-    <React.Fragment>
-        <span style={{
-            'font-family':'ubuntu',
-            'font-size':'13px'
-            }}>Views</span>  
-     <Badge variant="info">9</Badge>
-    </React.Fragment>
-)
 
+const BLOG_LENGTH = 500;
 export const Blog = ({posts}) => {
     return (
         <Container>
+             <Row>
+             <Col md={3}>
+             {categories()}
+ </Col>
+             </Row>
             {posts.map(({body, title, image}) => (
                 <React.Fragment>
                     <Card>
@@ -36,33 +20,27 @@ export const Blog = ({posts}) => {
                         <Card.Body>
                             <Row>
                                 <Col md={3}>
-                                    <Image fluid src={(image)}/>
+                                    <Image fluid src={image + '/40px200'}/>
                                 </Col>
                                 <Col>
                                     <Card.Title>{title}</Card.Title>
                                     <Card.Text>
                                         {truncate(body, {
-                                        'length': 500,
-                                        'separator': ' '
-                                        })}    
+                                            'length': BLOG_LENGTH,
+                                            'separator': ' '
+                                        })}
                                     </Card.Text>
                                 </Col>
                             </Row>
-                            { renderViewCounter()}
-
                         </Card.Body>
                     </Card>
-                    <Padding
-                        bottom='16px'
-                    />
+                    <Padding bottom='16px'/>
                 </React.Fragment>
-                
             ))}
-            
         </Container>
     );
 }
-const renderHeader = () => (
+const categories = () => (
     <Nav variant="pills" defaultActiveKey="#first">
         <Nav.Item>
             <Nav.Link href="#home">Home</Nav.Link>
@@ -76,5 +54,4 @@ const renderHeader = () => (
             </Nav.Link>
         </Nav.Item>
     </Nav>
-)
-export default Blog;
+);

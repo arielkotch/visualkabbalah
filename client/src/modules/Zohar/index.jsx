@@ -15,12 +15,12 @@ query blog{
     blog{
       id
       body
+      image
       title
       author
     }
   }
 `);
-
 class Zohar extends React.Component {
     render() {
         console.log()
