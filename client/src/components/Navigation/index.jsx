@@ -42,25 +42,30 @@ class Navigation extends React.Component {
         ? (
             <NavItem key={path}>
                 <Link key={path} to={path} className="nav-link" activeClassName={"active"}>
-                    <DropdownButton id="dropdown-item-button" title={name}>
+              {  (dropdown.length!==0)?(<DropdownButton id="dropdown-item-button" title={name}>
                         {dropdown.map((item, index) => (
                             <Link key={item} to={path+'/'+item.replace(/[&\/\\#,+()$~%.'":*?<>{}\s\-/]/g, '-').toLowerCase()} className="nav-link" activeClassName={"active"}>
                             <Dropdown.Item as="button" key={index}>{item}</Dropdown.Item>
-                        
+
                             </Link>
                         ))}
-                    </DropdownButton>
+                    </DropdownButton>):(
+                        <Link key={path} to={path} className="nav-link" activeClassName={"active"}>{name}</Link>
+                    )}
+
                 </Link>
-                {this.renderBreadcrumb([
+
+            </NavItem>
+
+        )
+        : (null))
+                            /*
+                            {this.renderBreadcrumb([
                                 {route:'/home',
                                 name:path,
                                 active:true}
                             ])}
-            </NavItem>
-            
-        )
-        : (null))
-
+                            */
     // {this.renderBadge(badge.value)} RENDER BADGE
 
     render() {

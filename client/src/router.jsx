@@ -3,6 +3,8 @@ import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 
 import Navigation from 'components/Navigation/index.jsx'
 import Zohar from 'modules/Zohar/index.jsx';
+import Blog from 'modules/BlogPage/index.jsx';
+
 import Tefillah from 'modules/Tefillah/index.jsx';
 import Nusach from 'modules/Nusach/index.jsx';
 import Topics from 'modules/Topics/index.jsx';
@@ -14,8 +16,22 @@ const client = new ApolloClient({uri: 'http://localhost:7000/graphql'});
 
 const routes =  [
         {
-            name: 'zohar',
+            name: 'blog',
             path: '/',
+            badge: {
+                value: 0
+            },
+            dropdown:[],
+            routes:[
+                {
+                    path: '/:id',
+                }
+            ],
+            show: SHOW,
+            component: Blog
+        },{
+            name: 'zohar',
+            path: '/zohar',
             badge: {
                 value: 0
             },
@@ -88,7 +104,7 @@ const routes =  [
             ],
 
             component: Topics
-        }, 
+        },
     ];
 
 class AppRouter extends Component {
@@ -97,7 +113,7 @@ class AppRouter extends Component {
         return (
             <ApolloProvider client={client}>
                 <Router>
-                        <Navigation brand="visual kabbalah" loggedIn={SHOW} routes={routes}/> 
+                        <Navigation brand="visual kabbalah" loggedIn={SHOW} routes={routes}/>
                         {routes.map(({path,component}) => <Route path={path} exact component={component}/>)}
                 </Router>
             </ApolloProvider>

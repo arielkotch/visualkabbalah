@@ -2,15 +2,17 @@
   "posts": [
     {
       "id": 1,
-      "title": "Lag BaOmer - Light a candle to Rabbi Shimon and make your request",
+      "title": "What is the worth of SILENCE?",
       "image":"https://i.ibb.co/smfq6FS/Purim.jpg",
-      "body":"At the yortzeit day of a Tzaddik, G-d invites the Tzaddick to Gan Eden and fulfills his requests at the presence of other Tzaddikim. This is why we celebrate the Hillulah (death anniversary) of a Tzaddick – it's the time they get blessings from G-d to give us. And in the Tzaddick’s merit those who At the yortzeit day of a Tzaddik, G-d invites the Tzaddick to Gan Eden and fulfills his requests at the presence of other Tzaddikim. This is why we celebrate the Hillulah (death anniversary) of a Tzaddick – it's the time they get blessings from G-d to give us. In the Tzaddick’s merit those who mention his name (and light a candle), get a blessing from G-d too. This is why we try to connect to tzaddikim.",
+      "category":"parsha",
+      "body":"This is important because SUSTAINABILITY is achieved only if you build both. For example: Did the Roman truly destroyed the second temple? The Answer is NO - because they were never able to destroy the upper temple which is our faith. That is why we survived for 2000 years without a temple.",
       "author": "Mark Lavi"
     },
     {
       "id": 2,
       "title": "Lag BaOmer - Light a candle to Rabbi Shimon and make your request",
       "image":"https://i.ibb.co/DYWxMY7/campfire.png",
+      "category":"home",
       "body":"At the yortzeit day of a Tzaddik, G-d invites the Tzaddick to Gan Eden and fulfills his requests at the presence of other Tzaddikim. This is why we celebrate the Hillulah (death anniversary) of a Tzaddick – it's the time they get blessings from G-d to give us. And in the Tzaddick’s merit those who At the yortzeit day of a Tzaddik, G-d invites the Tzaddick to Gan Eden and fulfills his requests at the presence of other Tzaddikim. This is why we celebrate the Hillulah (death anniversary) of a Tzaddick – it's the time they get blessings from G-d to give us. In the Tzaddick’s merit those who mention his name (and light a candle), get a blessing from G-d too. This is why we try to connect to tzaddikim.",
       "author": "Mark Lavi"
     },
@@ -18,6 +20,7 @@
       "id": 3,
       "title": "Lag BaOmer - Light a candle to Rabbi Shimon and make your request",
       "image":"https://i.ibb.co/smfq6FS/Purim.jpg",
+      "category":"topics",
       "body":"At the yortzeit day of a Tzaddik, G-d invites the Tzaddick to Gan Eden and fulfills his requests at the presence of other Tzaddikim. This is why we celebrate the Hillulah (death anniversary) of a Tzaddick – it's the time they get blessings from G-d to give us. And in the Tzaddick’s merit those who At the yortzeit day of a Tzaddik, G-d invites the Tzaddick to Gan Eden and fulfills his requests at the presence of other Tzaddikim. This is why we celebrate the Hillulah (death anniversary) of a Tzaddick – it's the time they get blessings from G-d to give us. In the Tzaddick’s merit those who mention his name (and light a candle), get a blessing from G-d too. This is why we try to connect to tzaddikim.",
       "author": "Mark Lavi"
     },
@@ -25,6 +28,7 @@
       "id": 4,
       "title": "Lag BaOmer - Light a candle to Rabbi Shimon and make your request",
       "image":"https://i.ibb.co/smfq6FS/Purim.jpg",
+      "category":"topics",
       "body":"At the yortzeit day of a Tzaddik, G-d invites the Tzaddick to Gan Eden and fulfills his requests at the presence of other Tzaddikim. This is why we celebrate the Hillulah (death anniversary) of a Tzaddick – it's the time they get blessings from G-d to give us. And in the Tzaddick’s merit those who At the yortzeit day of a Tzaddik, G-d invites the Tzaddick to Gan Eden and fulfills his requests at the presence of other Tzaddikim. This is why we celebrate the Hillulah (death anniversary) of a Tzaddick – it's the time they get blessings from G-d to give us. In the Tzaddick’s merit those who mention his name (and light a candle), get a blessing from G-d too. This is why we try to connect to tzaddikim.",
       "author": "Mark Lavi"
     }

@@ -47,7 +47,8 @@ const Post=new GraphQLObjectType({
         title:{type:GraphQLString},
         body:{type:GraphQLString},
         author:{type:GraphQLString},
-        image:{type:GraphQLString}
+        image:{type:GraphQLString},
+        category:{type:GraphQLString}
     })
 });
 

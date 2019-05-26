@@ -22,7 +22,7 @@ query blog{
     }
   }
 `);
-class Zohar extends React.Component {
+class BlogPage extends React.Component {
     render() {
         console.log()
         return (
@@ -64,4 +64,4 @@ class Zohar extends React.Component {
     }
 }
 
-export default Zohar;
+export default BlogPage;
